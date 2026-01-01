@@ -43,3 +43,13 @@ git commit -m "BuiAdding commands"
 git push origin service
 git checkout main
 gut merge service
+
+git checkout -b image
+git add .
+git commit -m "image"
+kubectl logs streamlit-service
+kubectl logs streamlit-app
+kubectl describe pod streamlit-app
+
+git add .
+git commit -m "finsh"
