@@ -1,0 +1,23 @@
+minikube status
+minikube start
+
+git add .
+git commit -m "Basic folder structure"
+git push
+git add .
+git commit -m "Adding additional files to the folder structure"
+git push
+git checkout -b dockerfile
+
+docker build -t app .
+docker images
+docker run -d -p 8501:8501 app:latest
+docker ps
+docker tag app:latest menachemkazido/app
+docker images
+docker push menachemkazido/app:latest
+
+git add .
+git commit -m "Creating a dockerfile"
+ git push -u origin dockerfile
+
