@@ -32,5 +32,11 @@ git checkout -b service
 git add .
 git commit -m "Building the server"
 git push origin service
-git checkout main
 
+kubectl apply -f .
+kubectl get pod
+kubectl get service
+minikube service streamlit-service
+
+git add .
+git commit -m "BuiAdding commands"
