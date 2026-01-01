@@ -19,5 +19,6 @@ docker push menachemkazido/app:latest
 
 git add .
 git commit -m "Creating a dockerfile"
- git push -u origin dockerfile
+git push -u origin dockerfile
+git merge dockerfile
 
