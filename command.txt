@@ -40,3 +40,6 @@ minikube service streamlit-service
 
 git add .
 git commit -m "BuiAdding commands"
+git push origin service
+git checkout main
+gut merge service
